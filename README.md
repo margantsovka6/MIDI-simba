@@ -64,4 +64,37 @@ const uint8_t noteMap[4][8] = {
     {48, 47, 46, 45, 44, 43, 42, 41}  // Row 4 (C4 - F3)
 };
 
+## Assembly
+
+You need this printed circuit board. Other parts u can remove
+
+![PCB front](image/5271965660722437382.jpg)
+![PCB back](image/5271965660722437380.jpg)
+
+Remove the ribbon cable and replace it with separate wires.
+
+It will look like this, first 4 is rows and other 8 columns:
+
+![Rewired PCB](image/5271965660722437381.jpg)
+
+Connect them to arduino to any digital pins.
+
+Here is my table:
+
+| Wire | Pin on Arduino Pro Micro |
+| --- | --- |
+| **1 (row 1)** | **2** |
+| **2 (row 2)** | **3** |
+| **3 (row 3)** | **4** |
+| **4 (row 4)** | **5** |
+| **5 (column 1)** | **7** |
+| **6 (column 2)** | **6** |
+| **7 (column 3)** | **8** |
+| **8 (column 4)** | **9** |
+| **9 (column 5)** | **10** |
+| **10 (column 6)** | **16** |
+| **11 (column 7)** | **14** |
+| **12 (column 8)** | **15** |
+
+After installation, send the code to Arduino board.
 
